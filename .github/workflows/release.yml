@@ -17,49 +17,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-latest
-            target: x86_64-unknown-linux-gnu
-            exe: rathole
-          - os: ubuntu-latest
-            target: x86_64-unknown-linux-musl
-            exe: rathole
-          - os: ubuntu-latest
-            target: aarch64-unknown-linux-musl
-            exe: rathole
-          - os: ubuntu-latest
-            target: arm-unknown-linux-musleabi
-            exe: rathole
-          - os: ubuntu-latest
-            target: arm-unknown-linux-musleabihf
-            exe: rathole
-          - os: ubuntu-latest
-            target: armv7-unknown-linux-musleabihf
-            exe: rathole
-          - os: ubuntu-latest
-            target: mips-unknown-linux-gnu
-            exe: rathole
-          - os: ubuntu-latest
-            target: mips-unknown-linux-musl
-            exe: rathole
-          - os: ubuntu-latest
-            target: mipsel-unknown-linux-gnu
-            exe: rathole
-          - os: ubuntu-latest
-            target: mipsel-unknown-linux-musl
-            exe: rathole
-          - os: ubuntu-latest
-            target: mips64-unknown-linux-gnuabi64
-            exe: rathole
-          - os: ubuntu-latest
-            target: mips64el-unknown-linux-gnuabi64
-            exe: rathole
-
-          - os: macos-latest
-            target: x86_64-apple-darwin
-            exe: rathole
-
           - os: windows-latest
-            target: x86_64-pc-windows-msvc
+            target: x86_64-pc-windows-gnu
             exe: rathole.exe
     steps:
       - uses: actions/checkout@v2
